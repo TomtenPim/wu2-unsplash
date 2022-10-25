@@ -19,6 +19,7 @@ async function imageShortcode(src, alt, sizes) {
 }
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("src/assets/fonts")
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     return {
         dir: {

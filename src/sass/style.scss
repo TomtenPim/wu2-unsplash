@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'IM Fell English SC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('IM Fell English SC Regular'), local('IMFellEnglishSC-Regular'), url(/assets/fonts/IMFellEnglishSC-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Almendra';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Almendra Regular'), local('Almendra-Regular'), url(/assets/fonts/Almendra-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Terraria';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('ANDYB'), local('ANDYB'), url(/assets/fonts/ANDYB.TTF) format("truetype");
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    color: rgb(255, 102, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20px 20px 30% 30% 30% 30%;
+    gap: 3%;
+    justify-items: center;
+}
+
+h1{
+    grid-column-start: span 3;
+    font-family: 'IM Fell English SC';
+} 
+
+p{
+    grid-column-start: span 3;
+    font-family: 'Terraria';
+}
