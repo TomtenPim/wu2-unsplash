@@ -28,11 +28,15 @@ body{
 
 main{
     color: rgb(255, 102, 0);
+}
+
+#bilder{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20px 20px 30% 30% 30% 30%;
+    grid-template-rows: 20px 20px 30% 30% 30%;
     gap: 3%;
     justify-items: center;
+    padding-bottom: 4rem;
 }
 
 h1{
@@ -40,7 +44,31 @@ h1{
     font-family: 'IM Fell English SC';
 } 
 
+h2{
+    grid-column-start: span 3;
+    font-family: 'Almendra';
+}
+
 p{
     grid-column-start: span 3;
     font-family: 'Terraria';
+}
+
+#klasser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    color: rgb(255, 102, 0);
+    }
+    
+nav{
+    width: 100%;
+    font-family: 'IM Fell English SC';
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
 }

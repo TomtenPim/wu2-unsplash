@@ -1,16 +1,28 @@
 ---
 layout: base.njk
+title: Spookypics
 ---
 
 <main>
+
+    <section id="bilder">
     <h1>Data dump</h1>
-    <p>Min github user: {{ github.login }} och plats: {{ github.location }}.</p>
+    <h2>Min github user: {{ github.login }} och plats: {{ github.location }}.</h2>
     <!-- <section class="images">  -->
-        {% asyncAll item in unsplash.results %}
-        <!-- <pre>{{ item | dump(2) }}</pre> -->
-        <!-- <img src="{{ item.urls.small }}" alt="{{ item.description }}"> -->
+        {% asyncAll item in unsplash.results %} 
         {% image item.urls.small, item.alt_description %}
         {% endall %}
    <!--  </section>  -->
     <!-- {% image "https://images.unsplash.com/photo-1508361001413-7a9dca21d08a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNzQ3Nzh8MHwxfHNlYXJjaHwxfHxoYWxsb3dlZW58ZW58MHx8fHwxNjY2NTk0Mjc4&ixlib=rb-4.0.3&q=80&w=400", "photo of my cat" %} -->
+    </section>
+    <section id="klasser">
+    <h1>Dungeons and Dumps 5:th edition</h1>
+    <h2>Alla klasser i DnD 5e</h2>
+        {% asyncAll item in dnd.results %}
+        <a href= "http://localhost:8080/classes/{{item.index}}/">{{item.name}}</a>
+        {% endall %}
+    </section>
+
 </main>
+
+<!--        <pre>{{ dnd | dump(2) }}</pre>-->

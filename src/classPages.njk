@@ -1,0 +1,13 @@
+---
+layout: base.njk
+
+pagination:
+    data: dnd.results
+    size: 1
+    alias: class
+permalink: "classes/{{ class.name | slug }}/"
+
+title: {{.name}}
+---
+
+{{ class | dump(2) }}

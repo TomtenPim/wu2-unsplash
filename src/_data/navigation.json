@@ -1,0 +1,62 @@
+[
+    {
+        "url": "/",
+        "title": "Top"
+    },
+    {
+        "url": "/#bilder",
+        "title": "Images"
+    },
+    {
+        "url": "/#klasser",
+        "title": "Classes"
+    },
+    {
+        "url": "/classes/barbarian",
+        "title": "Barbarian"
+    },
+    {
+        "url": "/classes/bard",
+        "title": "Bard"
+    }, 
+    {
+        "url": "/classes/cleric",
+        "title": "Cleric"
+    },
+    {
+        "url": "/classes/druid",
+        "title": "Druid"
+    },
+    {
+        "url": "/classes/fighter",
+        "title": "Fighter"
+    },
+    {
+        "url": "/classes/monk",
+        "title": "Monk"
+    },
+    {
+        "url": "/classes/paladin",
+        "title": "Paladin"
+    },
+    {
+        "url": "/classes/ranger",
+        "title": "Ranger"
+    },
+    {
+        "url": "/classes/rogue",
+        "title": "Rogue"
+    },
+    {
+        "url": "/classes/sorcerer",
+        "title": "Sorcerer"
+    },
+    {
+        "url": "/classes/warlock",
+        "title": "Warlock"
+    },
+    {
+        "url": "/classes/wizard",
+        "title": "Wizard"
+    }
+]
