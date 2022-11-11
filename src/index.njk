@@ -7,7 +7,7 @@ title: Spookypics
 
     <section id="bilder">
     <h1>Data dump</h1>
-    <!-- <h2>Min github user: {{ github.login }} och plats: {{ github.location }}.</h2> -->
+    <!-- <h2>Min github user: {{ github.login }} och plats: {{ github.location }}.</h2> --
     <!-- <section class="images">  -->
         {% asyncAll item in unsplash.results %} 
         {% image item.urls.small, item.alt_description %}
@@ -19,7 +19,7 @@ title: Spookypics
     <h1>Dungeons and Dumps 5:th edition</h1>
     <h2>Alla klasser i DnD 5e</h2>
         {% asyncAll item in dnd.results %}
-        <a href="{{ item.url }}">{{item.title}}</a>
+        <a href= "https://spooksandsources5e.netlify.app/classes/{{item.index}}/">{{item.name}}</a>
         {% endall %}
     </section>
 
