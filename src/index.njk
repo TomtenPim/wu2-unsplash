@@ -19,7 +19,7 @@ title: Spookypics
     <h1>Dungeons and Dumps 5:th edition</h1>
     <h2>Alla klasser i DnD 5e</h2>
         {% asyncAll item in dnd.results %}
-        <a href= "http://localhost:8080/classes/{{item.index}}/">{{item.name}}</a>
+        <a href="{{ item.url }}">{{item.title}}</a>
         {% endall %}
     </section>
 
