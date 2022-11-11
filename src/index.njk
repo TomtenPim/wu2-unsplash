@@ -7,7 +7,7 @@ title: Spookypics
 
     <section id="bilder">
     <h1>Data dump</h1>
-    <h2>Min github user: {{ github.login }} och plats: {{ github.location }}.</h2>
+    <!-- <h2>Min github user: {{ github.login }} och plats: {{ github.location }}.</h2> -->
     <!-- <section class="images">  -->
         {% asyncAll item in unsplash.results %} 
         {% image item.urls.small, item.alt_description %}
